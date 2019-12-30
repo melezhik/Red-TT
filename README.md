@@ -8,6 +8,8 @@ TomtyTest for [Red](https://github.com/FCO/Red)
 
 # Run tests
 
+`git clone https://github.com/melezhik/Red-TT.git && cd Red-TT`
+
 Setup Sparrow6 repository:
 
 `export SP6_REPO=http://repo.westus.cloudapp.azure.com/`
