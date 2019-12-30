@@ -1,10 +1,16 @@
+note: check if table has 2 column declarations
+
 between: { 'SQL : CREATE TABLE mmm(' } { ^^ ')' $$ }
   a varchar(255) NOT NULL
   b integer NOT NULL  
 end:
 
-begin: 'SQL : CREATE TABLE mmm('
-  regexp: \S+
-  regexp: \S+
+note: check if table exactly 2 statements between CREATE TABLE and ')' lines
+note: check that there are no excessive commas
+
+begin: 
+  SQL : CREATE TABLE mmm(
+  regexp: .* 'NULL' \s* ',' \s* $$
+  regexp: .* 'NULL' \s* $$
   regexp: ^^ \s* ')' \s* $$
 end:
