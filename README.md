@@ -20,7 +20,7 @@ Run all tests
 
 Run specific test
 
-`tomty map-grep`
+`tomty 03-map-grep-sql`
 
 Skip some tests
 
