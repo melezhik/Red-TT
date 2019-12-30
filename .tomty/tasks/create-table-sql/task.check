@@ -1,0 +1,10 @@
+between: { 'SQL : CREATE TABLE mmm(' } { ^^ ')' $$ }
+  a varchar(255) NOT NULL
+  b integer NOT NULL  
+end:
+
+begin: 'SQL : CREATE TABLE mmm('
+  regexp: \S+
+  regexp: \S+
+  regexp: ^^ \s* ')' \s* $$
+end:
