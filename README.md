@@ -1,10 +1,10 @@
 # Red-TT
 
-TomtyTest for Red
+TomtyTest for [Red](https://github.com/FCO/Red)
 
 # Install
 
-zef install --/test Tomty
+`zef install --/test Tomty`
 
 # Run tests
 
